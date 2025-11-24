@@ -1,0 +1,74 @@
+[
+    {
+        "nome": "Niklaus 'Klaus' Mikaelson",
+        "descricao": "O híbrido Original (vampiro/lobisomem) e protagonista da série, conhecido por sua personalidade impulsiva e seu objetivo de proteger sua filha, Hope.",
+        "ano": 1000,
+        "instagram": "josephmorgan"
+    },
+    {
+        "nome": "Elijah Mikaelson",
+        "descricao": "O Vampiro Original nobre, sempre focado em proteger sua família e manter seu código de 'Sempre e Para Sempre'.",
+        "ano": 997,
+        "instagram": "mr.danielgillies"
+    },
+    {
+        "nome": "Rebekah Mikaelson",
+        "descricao": "A Vampira Original que mais deseja levar uma vida humana normal, mas permanece leal à sua família.",
+        "ano": 988,
+        "instagram": "claireholt"
+    },
+    {
+        "nome": "Hayley Marshall",
+        "descricao": "Lobisomem e, mais tarde, híbrida (após o nascimento de Hope). Ela é a mãe de Hope e interesse amoroso de Elijah.",
+        "ano": 1991,
+        "instagram": "phoebejtonkin"
+    },
+    {
+        "nome": "Marcel Gerard",
+        "descricao": "O antigo protegido de Klaus. Marcel é um vampiro poderoso que se torna o rei de Nova Orleans.",
+        "ano": 1830,
+        "instagram": "charlesmdavis"
+    },
+    {
+        "nome": "Davina Claire",
+        "descricao": "Uma bruxa incrivelmente poderosa e jovem, que serviu como regente dos Nove Covens do Quartel Francês.",
+        "ano": 1995,
+        "instagram": "daniellerussell"
+    },
+    {
+        "nome": "Freya Mikaelson",
+        "descricao": "A irmã mais velha Mikaelson e uma bruxa incrivelmente poderosa que se junta à família na segunda temporada.",
+        "ano": 972,
+        "instagram": "rileyvoelkel"
+    },
+    {
+        "nome": "Hope Mikaelson",
+        "descricao": "A filha Tríbrida (Bruxa/Lobisomem/Vampira) de Klaus e Hayley. É a principal força a ser protegida pela família e a personagem central de Legacies.",
+        "ano": 2012,
+        "instagram": "danielleroserussell"
+    },
+    {
+        "nome": "Kol Mikaelson",
+        "descricao": "O irmão travesso da família Mikaelson, conhecido por sua personalidade caótica. É um poderoso bruxo e, mais tarde, um vampiro Original.",
+        "ano": 985,
+        "instagram": "danielsharman"
+    },
+    {
+        "nome": "Finn Mikaelson",
+        "descricao": "O irmão mais velho, frequentemente amargurado, que despreza ser um vampiro e passa a maior parte do tempo adormecido ou possuído.",
+        "ano": 990,
+        "instagram": "casparzafer"
+    },
+    {
+        "nome": "Esther Mikaelson",
+        "descricao": "A mãe da família Original e uma bruxa poderosa, responsável por transformar seus filhos em vampiros e uma das principais antagonistas.",
+        "ano": 960,
+        "instagram": "aliceevansofficial" 
+    },
+    {
+        "nome": "Mikael Mikaelson",
+        "descricao": "O pai da família Original. Um caçador de vampiros impiedoso, focado em matar Klaus.",
+        "ano": 965,
+        "instagram": "sebastianroche"
+    }
+]

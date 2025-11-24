@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+
+/* VARIÁVEIS DE CORES TEMA THE ORIGINALS */
+:root {
+    --primary-color: #8B0000; /* Vermelho Escuro/Vinho (Sangue) */
+    --secondary-color: #f0f0f0; /* Texto Cinza Claro/Quase Branco */
+    --tertiary-color: #b0b0b0; /* Texto Secundário Cinza */
+    --bg-color: #1a1a1a; /* Preto Escuro */
+    --card-bg-hover: #300000; /* Fundo do card no hover */
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-color); 
+    color: var(--secondary-color); 
+    font-family: "Quicksand", sans-serif; 
+}
+
+/* Header */
+header {
+    padding: 2rem 1rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    position: sticky; 
+    top: 0; 
+    background: var(--bg-color); 
+    z-index: 10; 
+    border-bottom: 1px solid var(--primary-color); /* Borda Vermelha */
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem; 
+    font-weight: 500; 
+    color: var(--primary-color); /* Título em Vermelho */
+    white-space: nowrap; 
+}
+
+/* Input de Busca */
+div input {
+    padding: 0.375rem 0.75rem; 
+    border-radius: 1rem; 
+    border: 1px solid var(--tertiary-color); 
+    background: #2b2b2b; /* Fundo do input um pouco mais claro que o body */
+    font-family: inherit; 
+    font-size: 1.5rem; 
+    width: 30rem; 
+    color: var(--secondary-color); 
+    margin-right: .5rem; 
+}
+
+div input:focus {
+    outline: none; 
+    border-color: var(--primary-color); 
+    box-shadow: 0 0 0 0.1rem var(--primary-color); 
+}
+
+/* Botão Buscar */
+#botao-busca {
+    padding: 1rem 2rem; 
+    border-radius: 1rem; 
+    border: none; 
+    cursor: pointer; 
+    font-family: inherit; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    background-color: var(--primary-color); /* Botão Vermelho */
+    color: var(--secondary-color); /* Texto do botão claro */
+    transition: background-color 0.2s ease;
+}
+
+#botao-busca:hover {
+    background-color: #a00000; /* Vermelho mais escuro no hover */
+}
+
+/* Main Content */
+main {
+    max-width: 80rem; 
+    margin: 2rem auto; 
+    min-height: 70vh; 
+    padding: 0 1rem;
+}
+
+/* Card Individual e Títulos */
+article {
+    border-bottom: 1px solid #3d3d3d; 
+    padding: 1.5rem 0; 
+    margin-bottom: 1.5rem; 
+    transition: background-color 0.3s ease;
+}
+
+article:hover {
+    background-color: var(--card-bg-hover); /* Fundo sutil no hover */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+article h2 {
+    color: var(--primary-color); /* Nome em Vermelho */
+    font-size: 1.8rem; 
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+article strong {
+    color: var(--tertiary-color); /* Texto secundário para o rótulo */
+}
+
+article a {
+    color: var(--secondary-color); /* Cor do link */
+    text-decoration: none; 
+    font-weight: 500; 
+    display: inline-block;
+    margin-top: 0.5rem;
+    border-bottom: 1px dotted var(--primary-color); /* Sublinhado pontilhado vermelho */
+    transition: color 0.2s;
+}
+
+article a:hover {
+    color: var(--primary-color); /* Link vermelho no hover */
+}
+
+/* Footer */
+.footer {
+    width: 100%; 
+    background-color: var(--bg-color);
+    padding: 15px 20px; 
+    border-top: 1px solid var(--primary-color); /* Borda Vermelha */
+    text-align: center;
+}
+
+.footer-links a {
+    color: var(--tertiary-color); 
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    color: var(--primary-color); 
+}
+
+/* ---------------------------------------------------- */
+/* NOVO ESTILO: GOTA DE SANGUE INTERATIVA */
+/* ---------------------------------------------------- */
+
+.interactive-message {
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+}
+
+.blood-drop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    margin: 3rem auto 1rem;
+    border-radius: 50% 50% 50% 0; /* Forma de gota */
+    transform: rotate(-45deg);
+    position: relative;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.8);
+    animation: drop-pulse 1.5s infinite alternate; /* Animação de pulsar */
+}
+
+@keyframes drop-pulse {
+    from {
+        transform: rotate(-45deg) scale(0.95);
+        opacity: 0.8;
+    }
+    to {
+        transform: rotate(-45deg) scale(1.05);
+        opacity: 1;
+    }
+}
+
+
+/* Media Queries (Mantidas) */
+@media (max-width: 768px) {
+    header { 
+        flex-direction: column; 
+        padding: 1rem; 
+    }
+    div input { 
+        width: 100%; 
+        font-size: 1.2rem; 
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
